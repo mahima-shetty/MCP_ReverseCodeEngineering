@@ -1,5 +1,9 @@
 from fastapi import FastAPI
 from db import get_connection
+from tools.schema import get_table_schema
+from tools.plsql import get_plsql_code
+from tools.dependencies import get_dependencies
+from tools.performance import get_execution_plan, get_table_stats
 
 app = FastAPI()
 
